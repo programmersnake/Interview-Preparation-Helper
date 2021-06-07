@@ -2,20 +2,21 @@ package searching;
 
 public class BinarySearch {
 
-    public int search(int value, int[] array) {
+    public int search(int searchValue, int[] inputArray) {
         int startIndex = 0;
-        int endIndex = array.length - 1;
+        int finalIndex = inputArray.length - 1;
 
-        while(startIndex <= endIndex) {
-            int middleIndex = (startIndex + endIndex) / 2;
-            if(array[middleIndex] == value) {
-                return value;
+        while(startIndex <= finalIndex) {
+            int middleIndex = (startIndex + finalIndex) / 2;
+
+            if (inputArray[middleIndex] == searchValue) {
+                return middleIndex;
             }
-            else if(array[middleIndex]>value) {
-                endIndex = middleIndex;
+            else if (inputArray[middleIndex] < searchValue) {
+                startIndex = middleIndex + 1;
             }
-            else {
-                startIndex = middleIndex;
+            else if (inputArray[middleIndex] > searchValue) {
+                finalIndex = middleIndex - 1;
             }
         }
         return -1;
