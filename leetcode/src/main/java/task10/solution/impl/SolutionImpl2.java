@@ -1,6 +1,8 @@
-package task10.solution;
+package task10.solution.impl;
 
-public class SolutionImpl2 implements Solution{
+import task10.solution.Solution;
+
+public class SolutionImpl2 implements Solution {
     public int removeDuplicates(int[] nums) {
         int duplicatesCount = 0;
         for (int firstIndex = 0; firstIndex <= nums.length - duplicatesCount; firstIndex++) {

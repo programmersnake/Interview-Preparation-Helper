@@ -2,10 +2,11 @@ package task10.solution;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import task10.solution.impl.SolutionImpl;
 
 class SolutionImplTest {
 
-    Solution solution = new SolutionImpl();
+    private Solution solution = new SolutionImpl();
 
     @Test
     public void shouldReturn5() {
