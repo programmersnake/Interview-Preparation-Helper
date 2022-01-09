@@ -34,9 +34,94 @@ public class Solution implements task_92_564.solution.Solution {
 
                     maxPriceInTrend = nextPrice;
                     minPriceInTrend = currentPrice;
+
+                    boughtPrice = minPriceInTrend;
                 }
-                continue;
+                else {
+                    maxPriceInTrend = nextPrice;
+                    minPriceInTrend = currentPrice;
+
+                    boughtPrice = minPriceInTrend;
+                }
+                // if it is the last day too
+                if (nextDay == prices.length - 1) {
+                    int max = Math.max(currentPrice, nextPrice);
+                    int min = Math.min(currentPrice, nextPrice);
+
+                    if (max > maxPriceInTrend) {
+                        maxPriceInTrend = max;
+                    }
+                    if (min < minPriceInTrend) {
+                        minPriceInTrend = min;
+                    }
+                    if (wasBought) {
+                        if (boughtPrice < maxPriceInTrend) {
+                            maxProfit += (maxPriceInTrend - boughtPrice);
+                            break;
+                        }
+                    } else {
+                        if (isUpTrend(currentPrice, nextPrice) && minPriceInTrend < maxPriceInTrend) {
+                            maxProfit += (maxPriceInTrend - minPriceInTrend);
+                            break;
+                        }
+                    }
+                } else {
+                    continue;
+                }
             }
+
+            // last day
+            if (nextDay == prices.length - 1) {
+
+                if(isContinueTrend(upTrend, downTrend, currentPrice, nextPrice)) {
+                    int max = Math.max(currentPrice, nextPrice);
+                    int min = Math.min(currentPrice, nextPrice);
+
+                    if (max > maxPriceInTrend) {
+                        maxPriceInTrend = max;
+                    }
+                    if (min < minPriceInTrend) {
+                        minPriceInTrend = min;
+                    }
+                    if (wasBought) {
+                        if (boughtPrice < maxPriceInTrend) {
+                            maxProfit += (maxPriceInTrend - boughtPrice);
+                            break;
+                        }
+                    } else {
+                        if (isUpTrend(currentPrice, nextPrice) && minPriceInTrend < maxPriceInTrend) {
+                            maxProfit += (maxPriceInTrend - minPriceInTrend);
+                            break;
+                        }
+                    }
+                }
+                else {
+                    maxPriceInTrend = 0;
+                    int max = Math.max(currentPrice, nextPrice);
+                    int min = Math.min(currentPrice, nextPrice);
+
+                    if (max > maxPriceInTrend) {
+                        maxPriceInTrend = max;
+                    }
+                    if (min < minPriceInTrend) {
+                        minPriceInTrend = min;
+                    }
+                    if (wasBought) {
+                        if (boughtPrice < maxPriceInTrend) {
+                            maxProfit += (maxPriceInTrend - boughtPrice);
+                            break;
+                        }
+                    } else {
+                        if (isUpTrend(currentPrice, nextPrice) && minPriceInTrend < maxPriceInTrend) {
+                            maxProfit += (maxPriceInTrend - minPriceInTrend);
+                            break;
+                        }
+                    }
+                }
+
+
+            }
+
             // other days
             System.out.println();
             if (isContinueTrend(upTrend, downTrend, currentPrice, nextPrice)) {
@@ -55,6 +140,7 @@ public class Solution implements task_92_564.solution.Solution {
                     if (min < minPriceInTrend) {
                         minPriceInTrend = min;
                     }
+                    boughtPrice = minPriceInTrend;
                 } else if (downTrend) {
                     downTrend = true;
                     upTrend = false;
@@ -69,12 +155,13 @@ public class Solution implements task_92_564.solution.Solution {
                     if (min < minPriceInTrend) {
                         minPriceInTrend = min;
                     }
+                    boughtPrice = minPriceInTrend;
                 }
             } else {
                 // change Trend
                 System.out.println("Change Trend");
-                int max = currentPrice;
-                int min = nextPrice;
+                int max = Math.max(currentPrice, nextPrice);
+                int min = Math.min(currentPrice, nextPrice);
 
                 if (max > maxPriceInTrend) {
                     maxPriceInTrend = max;
@@ -83,14 +170,13 @@ public class Solution implements task_92_564.solution.Solution {
                     minPriceInTrend = min;
                 }
 
-                if (isUpTrend(currentPrice, nextPrice)) {
+                if (isUpTrend(currentPrice, nextPrice)) { // buy
                     boughtPrice = minPriceInTrend;
                     wasBought = true;
 
                     upTrend = true;
                     downTrend = false;
-                }
-                else if (isDownTrend(currentPrice, nextPrice)) {
+                } else if (isDownTrend(currentPrice, nextPrice)) { // sell
                     maxProfit += (maxPriceInTrend - boughtPrice);
                     boughtPrice = 0;
                     wasBought = false;
@@ -98,10 +184,10 @@ public class Solution implements task_92_564.solution.Solution {
                     upTrend = false;
                     downTrend = true;
                 }
-                maxPriceInTrend = 0;
-                minPriceInTrend = 0;
+                // todo ??? для чего
+                maxPriceInTrend = nextPrice;
+                minPriceInTrend = nextPrice;
             }
-            // todo do realization for last day (if it need) as other days (maybe)
         }
         return maxProfit;
     }

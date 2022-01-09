@@ -44,4 +44,59 @@ class SolutionFor_92_564_Test {
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void test4() {
+        int[] array = {7, 6, 4, 3, 1, 3, 5};
+        int expectedResult = 4;
+        int actualResult = solution.maxProfit(array);
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void test5() {
+        int[] array = {1, 2, 14, 13, 11, 13, 5};
+        int expectedResult = 15;
+        int actualResult = solution.maxProfit(array);
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void test6() {
+        int[] array = {1, 2};
+        int expectedResult = 1;
+        int actualResult = solution.maxProfit(array);
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void test7() {
+        int[] array = {2, 1, 4};
+        int expectedResult = 3;
+        int actualResult = solution.maxProfit(array);
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void test8() {
+        int[] array = {4, 1, 2};
+        int expectedResult = 1;
+        int actualResult = solution.maxProfit(array);
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void test9() {
+        int[] array = {2, 2, 5};
+        int expectedResult = 3;
+        int actualResult = solution.maxProfit(array);
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void test10() {
+        int[] array = {2, 1, 4, 5, 2, 9, 7};
+        int expectedResult = 11;
+        int actualResult = solution.maxProfit(array);
+        Assertions.assertEquals(expectedResult, actualResult);
+    }
 }
