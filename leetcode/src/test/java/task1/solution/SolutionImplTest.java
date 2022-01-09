@@ -3,7 +3,7 @@ package task1.solution;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class SolutionTest {
+class SolutionImplTest {
 
     @Test
     void twoSumSouldBe9() {
