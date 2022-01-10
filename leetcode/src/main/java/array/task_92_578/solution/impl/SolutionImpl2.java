@@ -8,10 +8,10 @@ import java.util.Set;
 /**
  * Simple.
  *
- * Runtime: 6 ms
- * Memory Usage: 52.5 MB
+ * Runtime: 15 ms
+ * Memory Usage: 73.5 MB
  */
-public class SolutionImpl implements Solution92_578 {
+public class SolutionImpl2 implements Solution92_578 {
     @Override
     public boolean containsDuplicate(int[] nums) {
         if (nums == null) {
@@ -21,11 +21,10 @@ public class SolutionImpl implements Solution92_578 {
         Set<Integer> set = new HashSet<>();
 
         for (int num : nums) {
-            if (!set.contains(num)) {
-                set.add(num);
-            } else {
+            if (set.contains(num)) {
                 return true;
             }
+            set.add(num);
         }
 
         return false;
