@@ -4,9 +4,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import task_92_564.solution.Solution;
 
-public class SolutionTest {
+public class Solution2Test {
 
-    private final Solution solutionImpl = new SolutionImpl();
+    private final Solution solutionImpl = new SolutionImpl2();
 
     /**
      * Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
