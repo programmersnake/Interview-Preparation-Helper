@@ -1,6 +1,6 @@
 package array.task_92_564.solution.impl;
 
-import array.task_92_564.solution.Solution;
+import array.task_92_564.solution.Solution92_564;
 
 import java.util.stream.IntStream;
 
@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
  * Too long time, but less code.
  * First solution I like more.
  */
-public class SolutionImpl2 implements Solution {
+public class SolutionImpl2 implements Solution92_564 {
     @Override
     public int maxProfit(int[] prices) {
         return IntStream.range(0, prices.length - 1)
