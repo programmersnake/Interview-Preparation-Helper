@@ -11,9 +11,6 @@ public class SolutionTest {
 
     private final Solution92_549 solution = new SolutionImpl();
 
-    /**
-     *
-     */
     @Test
     public void test() {
         int[] array = {2,2,1};
