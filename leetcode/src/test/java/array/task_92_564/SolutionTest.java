@@ -2,9 +2,11 @@ package array.task_92_564;
 
 import array.task_92_564.solution.impl.SolutionImpl;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import array.task_92_564.solution.Solution;
 
+@DisplayName("array.task_92_564.Solution")
 public class SolutionTest {
 
     private final Solution solutionImpl = new SolutionImpl();
