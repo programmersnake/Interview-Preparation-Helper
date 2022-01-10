@@ -1,11 +1,11 @@
 package array.task_92_646.solution.impl;
 
-import array.task_92_646.solution.Solution;
+import array.task_92_646.solution.Solution92_646;
 
 /**
  * Long time for huge arrays
  */
-public class SolutionImpl implements Solution {
+public class SolutionImpl implements Solution92_646 {
     @Override
     public void rotate(int[] nums, int k) {
         if (nums == null || k <= 0 || nums.length < 1) {
