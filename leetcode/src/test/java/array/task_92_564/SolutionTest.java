@@ -4,12 +4,12 @@ import array.task_92_564.solution.impl.SolutionImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import array.task_92_564.solution.Solution;
+import array.task_92_564.solution.Solution92_564;
 
 @DisplayName("array.task_92_564.Solution")
 public class SolutionTest {
 
-    private final Solution solutionImpl = new SolutionImpl();
+    private final Solution92_564 solution = new SolutionImpl();
 
     /**
      * Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
@@ -20,7 +20,7 @@ public class SolutionTest {
     public void test() {
         int[] array = {7, 1, 5, 3, 6, 4};
         int expectedResult = 7;
-        int actualResult = solutionImpl.maxProfit(array);
+        int actualResult = solution.maxProfit(array);
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
@@ -32,7 +32,7 @@ public class SolutionTest {
     public void test2() {
         int[] array = {1, 2, 3, 4, 5};
         int expectedResult = 4;
-        int actualResult = solutionImpl.maxProfit(array);
+        int actualResult = solution.maxProfit(array);
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
@@ -44,7 +44,7 @@ public class SolutionTest {
     public void test3() {
         int[] array = {7, 6, 4, 3, 1};
         int expectedResult = 0;
-        int actualResult = solutionImpl.maxProfit(array);
+        int actualResult = solution.maxProfit(array);
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
@@ -52,7 +52,7 @@ public class SolutionTest {
     public void test4() {
         int[] array = {7, 6, 4, 3, 1, 3, 5};
         int expectedResult = 4;
-        int actualResult = solutionImpl.maxProfit(array);
+        int actualResult = solution.maxProfit(array);
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
@@ -60,7 +60,7 @@ public class SolutionTest {
     public void test5() {
         int[] array = {1, 2, 14, 13, 11, 13, 5};
         int expectedResult = 15;
-        int actualResult = solutionImpl.maxProfit(array);
+        int actualResult = solution.maxProfit(array);
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
@@ -68,7 +68,7 @@ public class SolutionTest {
     public void test6() {
         int[] array = {1, 2};
         int expectedResult = 1;
-        int actualResult = solutionImpl.maxProfit(array);
+        int actualResult = solution.maxProfit(array);
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
@@ -76,7 +76,7 @@ public class SolutionTest {
     public void test7() {
         int[] array = {2, 1, 4};
         int expectedResult = 3;
-        int actualResult = solutionImpl.maxProfit(array);
+        int actualResult = solution.maxProfit(array);
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
@@ -84,7 +84,7 @@ public class SolutionTest {
     public void test8() {
         int[] array = {4, 1, 2};
         int expectedResult = 1;
-        int actualResult = solutionImpl.maxProfit(array);
+        int actualResult = solution.maxProfit(array);
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
@@ -92,7 +92,7 @@ public class SolutionTest {
     public void test9() {
         int[] array = {2, 2, 5};
         int expectedResult = 3;
-        int actualResult = solutionImpl.maxProfit(array);
+        int actualResult = solution.maxProfit(array);
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
@@ -100,7 +100,7 @@ public class SolutionTest {
     public void test10() {
         int[] array = {2, 1, 4, 5, 2, 9, 7};
         int expectedResult = 11;
-        int actualResult = solutionImpl.maxProfit(array);
+        int actualResult = solution.maxProfit(array);
         Assertions.assertEquals(expectedResult, actualResult);
     }
 }
