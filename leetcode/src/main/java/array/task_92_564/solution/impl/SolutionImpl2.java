@@ -1,6 +1,6 @@
-package task_92_564.solution.impl;
+package array.task_92_564.solution.impl;
 
-import task_92_564.solution.Solution;
+import array.task_92_564.solution.Solution;
 
 import java.util.stream.IntStream;
 

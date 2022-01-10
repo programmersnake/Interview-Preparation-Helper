@@ -1,11 +1,14 @@
-package task_92_646.solution.impl;
+package array.task_92_646.solution.impl;
 
-import task_92_646.solution.Solution;
+import array.task_92_646.solution.Solution;
 
+/**
+ * Long time for huge arrays
+ */
 public class SolutionImpl implements Solution {
     @Override
     public void rotate(int[] nums, int k) {
-        if (k <= 0 || nums.length < 1) {
+        if (nums == null || k <= 0 || nums.length < 1) {
             return;
         }
         int lastValue = nums[1];
@@ -14,7 +17,7 @@ public class SolutionImpl implements Solution {
                 if (firstI == 0) {
                     lastValue = nums[secondI];
                     nums[secondI] = nums[firstI];
-                } else if (firstI == nums.length-1) {
+                } else if (firstI == nums.length - 1) {
                     nums[0] = lastValue;
                 } else {
                     int tempValue = nums[secondI];

@@ -1,8 +1,9 @@
-package task_92_564.solution.impl;
+package array.task_92_564;
 
+import array.task_92_564.solution.impl.SolutionImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import task_92_564.solution.Solution;
+import array.task_92_564.solution.Solution;
 
 public class SolutionTest {
 

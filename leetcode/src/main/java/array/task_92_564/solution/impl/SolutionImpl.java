@@ -1,10 +1,12 @@
-package task_92_564.solution.impl;
+package array.task_92_564.solution.impl;
+
+import array.task_92_564.solution.Solution;
 
 /**
  * Runtime: 1 ms
  * Memory Usage: 38.8 MB
  */
-public class SolutionImpl implements task_92_564.solution.Solution {
+public class SolutionImpl implements Solution {
     @Override
     public int maxProfit(int[] prices) {
         int maxProfit = 0;
