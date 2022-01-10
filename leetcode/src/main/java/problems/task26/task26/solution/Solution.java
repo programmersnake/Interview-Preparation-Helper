@@ -1,4 +1,4 @@
-package task10.solution;
+package problems.task26.task26.solution;
 
 public interface Solution {
     int removeDuplicates(int[] nums);
