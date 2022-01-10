@@ -1,11 +1,13 @@
 package problems.task26;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import problems.task26.task26.solution.Solution;
 import problems.task26.task26.solution.impl.SolutionImpl;
 
-class SolutionImplImplTest {
+@DisplayName("problems.task26.Solution")
+class SolutionTest {
 
     private Solution solution = new SolutionImpl();
 

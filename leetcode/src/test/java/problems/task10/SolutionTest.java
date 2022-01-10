@@ -1,9 +1,11 @@
 package problems.task10;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import problems.task1.task1.solution.Solution;
 
+@DisplayName("problems.task10.Solution")
 class SolutionTest {
 
     @Test
