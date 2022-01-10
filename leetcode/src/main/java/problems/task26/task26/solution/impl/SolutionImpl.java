@@ -1,6 +1,6 @@
-package task10.solution.impl;
+package problems.task26.task26.solution.impl;
 
-import task10.solution.Solution;
+import problems.task26.task26.solution.Solution;
 
 public class SolutionImpl implements Solution {
     public int removeDuplicates(int[] nums) {

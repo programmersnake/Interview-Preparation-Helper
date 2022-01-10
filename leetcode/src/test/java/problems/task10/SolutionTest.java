@@ -1,9 +1,10 @@
-package task1.solution;
+package problems.task10;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import problems.task1.task1.solution.Solution;
 
-class SolutionImplImplTest {
+class SolutionTest {
 
     @Test
     void twoSumShouldBe9() {

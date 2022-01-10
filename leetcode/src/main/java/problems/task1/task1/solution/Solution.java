@@ -1,4 +1,4 @@
-package task1.solution;
+package problems.task1.task1.solution;
 
 public class Solution {
 

@@ -1,8 +1,9 @@
-package task10.solution;
+package problems.task26;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import task10.solution.impl.SolutionImpl;
+import problems.task26.task26.solution.Solution;
+import problems.task26.task26.solution.impl.SolutionImpl;
 
 class SolutionImplImplTest {
 
