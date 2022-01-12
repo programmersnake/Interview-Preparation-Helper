@@ -13,22 +13,22 @@ public class SolutionTest {
 
     @Test
     public void test() {
-//        int[] array = {2,2,1};
-//        int actualResult = solution.singleNumber(array);
-//        Assertions.assertEquals(1, actualResult);
+        int[] array = {2,2,1};
+        int actualResult = solution.singleNumber(array);
+        Assertions.assertEquals(1, actualResult);
     }
 
     @Test
     public void test2() {
-//        int[] array = {1};
-//        int actualResult = solution.singleNumber(array);
-//        Assertions.assertEquals(1, actualResult);
+        int[] array = {1};
+        int actualResult = solution.singleNumber(array);
+        Assertions.assertEquals(1, actualResult);
     }
 
     @Test
     public void test3() {
-//        int[] array = {4,5,5,1,2,2,1};
-//        int actualResult = solution.singleNumber(array);
-//        Assertions.assertEquals(4, actualResult);
+        int[] array = {4,5,5,1,2,2,1};
+        int actualResult = solution.singleNumber(array);
+        Assertions.assertEquals(4, actualResult);
     }
 }
