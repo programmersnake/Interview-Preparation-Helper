@@ -1,4 +1,4 @@
-package array.task_92_559;
+package array.task_92_559.solution.impl;
 
 import array.task_92_559.solution.Solution_92_559;
 

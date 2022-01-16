@@ -1,6 +1,7 @@
 package array.task_92_559;
 
 import array.task_92_559.solution.Solution_92_559;
+import array.task_92_559.solution.impl.SolutionImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

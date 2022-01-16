@@ -1,7 +1,7 @@
-package array.task_92_549;
+package array.task_92_559;
 
-import array.task_92_559.solution.impl.SolutionImpl2;
 import array.task_92_559.solution.Solution_92_559;
+import array.task_92_559.solution.impl.SolutionImpl2;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -32,17 +32,4 @@ class SolutionTest2 {
         Assertions.assertArrayEquals(new int[]{1, 0}, actualResult);
     }
 
-    @Test
-    public void test4() {
-        int[] array = {1, 9};
-        int[] actualResult = solution.plusOne(array);
-        Assertions.assertArrayEquals(new int[]{2, 0}, actualResult);
-    }
-
-    @Test
-    public void test5() {
-        int[] array = {9, 9};
-        int[] actualResult = solution.plusOne(array);
-        Assertions.assertArrayEquals(new int[]{1, 0, 0}, actualResult);
-    }
 }
