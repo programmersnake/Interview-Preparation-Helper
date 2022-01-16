@@ -3,7 +3,7 @@ package problems.task10;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import problems.task1.task1.solution.Solution2;
+import problems.task1.solution.Solution2;
 
 @DisplayName("problems.task10.Solution2")
 class Solution2Test {
