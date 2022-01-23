@@ -1,5 +1,5 @@
 package array.task_92_546.solution;
 
-public interface Solution_92_546 {
+public interface ISolution {
     int[] twoSum(int[] nums, int target);
 }

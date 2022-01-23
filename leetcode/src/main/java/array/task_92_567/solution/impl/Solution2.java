@@ -1,12 +1,12 @@
 package array.task_92_567.solution.impl;
 
-import array.task_92_567.solution.Solution_92_567;
+import array.task_92_567.solution.ISolution;
 
 /**
  * Runtime: 4 ms
  * Memory Usage: 52.5 MB
  */
-public class SolutionImpl2 implements Solution_92_567 {
+public class Solution2 implements ISolution {
     @Override
     public void moveZeroes(int[] nums) {
         int lastSavedPosition = 0;

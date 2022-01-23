@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 @DisplayName("array.task_92_769.Solution")
 class SolutionTest {
-    private final SolutionImpl solution = new SolutionImpl();
+    private final Solution solution = new Solution();
 
     @Test
     public void test() {

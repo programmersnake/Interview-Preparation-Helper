@@ -1,5 +1,5 @@
 package array.task_92_567.solution;
 
-public interface Solution_92_567 {
+public interface ISolution {
     void moveZeroes(int[] nums);
 }

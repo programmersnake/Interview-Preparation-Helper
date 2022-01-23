@@ -1,12 +1,12 @@
 package array.task_92_549.solution.impl;
 
-import array.task_92_549.solution.Solution92_549;
+import array.task_92_549.solution.ISolution;
 
 /**
  * Runtime: 1 ms
  * Memory Usage: 47.5 MB
  */
-public class SolutionImpl implements Solution92_549 {
+public class Solution implements ISolution {
 
     /**
      * Rules:

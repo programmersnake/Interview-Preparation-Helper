@@ -1,6 +1,6 @@
 package array.task_92_546.solution.impl;
 
-import array.task_92_546.solution.Solution_92_546;
+import array.task_92_546.solution.ISolution;
 
 import java.util.HashMap;
 
@@ -9,7 +9,7 @@ import java.util.HashMap;
  * Runtime: 2 ms
  * Memory Usage: 42.9 MB
  */
-public class SolutionImpl2 implements Solution_92_546 {
+public class Solution2 implements ISolution {
     @Override
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> elements = new HashMap<>();

@@ -1,13 +1,13 @@
 package array.task_92_546.solution.impl;
 
-import array.task_92_546.solution.Solution_92_546;
+import array.task_92_546.solution.ISolution;
 
 /**
  * Not good solution
  * Runtime: 105 ms
  * Memory Usage: 42.1 MB
  */
-public class SolutionImpl implements Solution_92_546 {
+public class Solution implements ISolution {
     @Override
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];

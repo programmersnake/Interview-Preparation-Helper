@@ -1,12 +1,12 @@
 package array.task_92_646.solution.impl;
 
-import array.task_92_646.solution.Solution92_646;
+import array.task_92_646.solution.ISolution;
 
 /**
  * Runtime: 2 ms
  * Memory Usage: 56.3 MB
  */
-public class SolutionImpl2 implements Solution92_646 {
+public class Solution2 implements ISolution {
     @Override
     public void rotate(int[] nums, int k) {
         if (nums == null || k <= 0 || nums.length < 2) {

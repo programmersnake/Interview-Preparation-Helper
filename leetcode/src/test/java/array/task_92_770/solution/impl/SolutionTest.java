@@ -1,6 +1,6 @@
 package array.task_92_770.solution.impl;
 
-import array.task_92_770.solution.Solution_92_770;
+import array.task_92_770.solution.ISolution;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 @DisplayName("array.task_92_770.Solution")
 class SolutionTest {
 
-    private final Solution_92_770 solution = new SolutionImpl();
+    private final ISolution solution = new Solution();
 
     @Test
     public void test() {

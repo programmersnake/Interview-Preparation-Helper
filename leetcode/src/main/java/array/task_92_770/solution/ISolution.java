@@ -1,5 +1,5 @@
 package array.task_92_770.solution;
 
-public interface Solution_92_770 {
+public interface ISolution {
     void rotate(int[][] matrix);
 }

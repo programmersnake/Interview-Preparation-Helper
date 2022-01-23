@@ -1,7 +1,7 @@
 package array.task_92_567;
 
-import array.task_92_567.solution.Solution_92_567;
-import array.task_92_567.solution.impl.SolutionImpl2;
+import array.task_92_567.solution.ISolution;
+import array.task_92_567.solution.impl.Solution2;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 @DisplayName("array.task_92_567.Solution2")
 class SolutionTest2 {
 
-    private final Solution_92_567 solution = new SolutionImpl2();
+    private final ISolution solution = new Solution2();
 
     @Test
     public void test() {

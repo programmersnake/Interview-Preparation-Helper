@@ -1,6 +1,6 @@
 package array.task_92_769.solution.impl;
 
-import array.task_92_769.solution.Solution_92_769;
+import array.task_92_769.solution.ISolution;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -9,7 +9,7 @@ import java.util.Set;
  * Runtime: 22 ms
  * Memory Usage: 44.7 MB
  */
-public class SolutionImpl implements Solution_92_769 {
+public class Solution implements ISolution {
     @Override
     public boolean isValidSudoku(char[][] board) {
         for (int x = 0; x < 3; x++) {

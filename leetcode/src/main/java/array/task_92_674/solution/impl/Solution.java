@@ -1,6 +1,6 @@
 package array.task_92_674.solution.impl;
 
-import array.task_92_674.solution.Solution92_674;
+import array.task_92_674.solution.ISolution;
 
 import java.util.Arrays;
 
@@ -8,7 +8,7 @@ import java.util.Arrays;
  * Runtime: 4 ms
  * Memory Usage: 40.3 MB
  */
-public class SolutionImpl implements Solution92_674 {
+public class Solution implements ISolution {
 
     @Override
     public int[] intersect(int[] nums1, int[] nums2) {
