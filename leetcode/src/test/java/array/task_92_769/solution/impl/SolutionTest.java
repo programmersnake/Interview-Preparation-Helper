@@ -58,4 +58,22 @@ class SolutionTest {
         boolean validSudoku = solution.isValidSudoku(array);
         Assertions.assertFalse(validSudoku);
     }
+
+    @Test
+    public void test4() {
+        char[][] array = {
+                {'.', '.', '4', '.', '.', '.', '6', '3', '.'},
+                {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+                {'5', '.', '.', '.', '.', '.', '.', '9', '.'},
+                {'.', '.', '.', '5', '6', '.', '.', '.', '.'},
+                {'4', '.', '3', '.', '.', '.', '.', '.', '1'},
+                {'.', '.', '.', '7', '.', '.', '.', '.', '.'},
+                {'.', '.', '.', '5', '.', '.', '.', '.', '.'},
+                {'.', '.', '.', '.', '.', '.', '.', '.', '.'},
+                {'.', '.', '.', '.', '.', '.', '.', '.', '.'}};
+
+        boolean validSudoku = solution.isValidSudoku(array);
+        Assertions.assertFalse(validSudoku);
+    }
+
 }
