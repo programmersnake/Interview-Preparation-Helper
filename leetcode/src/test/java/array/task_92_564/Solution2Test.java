@@ -1,15 +1,15 @@
 package array.task_92_564;
 
-import array.task_92_564.solution.impl.SolutionImpl2;
+import array.task_92_564.solution.impl.Solution2;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import array.task_92_564.solution.Solution92_564;
+import array.task_92_564.solution.ISolution;
 
 @DisplayName("array.task_92_564.Solution2")
 public class Solution2Test {
 
-    private final Solution92_564 solution = new SolutionImpl2();
+    private final ISolution solution = new Solution2();
 
     /**
      * Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.

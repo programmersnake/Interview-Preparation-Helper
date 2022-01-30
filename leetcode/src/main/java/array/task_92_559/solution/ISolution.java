@@ -1,5 +1,5 @@
 package array.task_92_559.solution;
 
-public interface Solution_92_559 {
+public interface ISolution {
     int[] plusOne(int[] digits);
 }

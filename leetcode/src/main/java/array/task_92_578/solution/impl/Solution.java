@@ -1,6 +1,6 @@
 package array.task_92_578.solution.impl;
 
-import array.task_92_578.solution.Solution92_578;
+import array.task_92_578.solution.ISolution;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -11,7 +11,7 @@ import java.util.Set;
  * Runtime: 6 ms
  * Memory Usage: 52.5 MB
  */
-public class SolutionImpl implements Solution92_578 {
+public class Solution implements ISolution {
     @Override
     public boolean containsDuplicate(int[] nums) {
         if (nums == null) {

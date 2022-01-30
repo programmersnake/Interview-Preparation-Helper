@@ -1,13 +1,13 @@
 package array.task_92_567.solution.impl;
 
-import array.task_92_567.solution.Solution_92_567;
+import array.task_92_567.solution.ISolution;
 
 /**
  * Just iterate
  * Runtime: 144 ms
  * Memory Usage: 52.6 MB
  */
-public class SolutionImpl implements Solution_92_567 {
+public class Solution implements ISolution {
     @Override
     public void moveZeroes(int[] nums) {
         int zerosCount = 0;

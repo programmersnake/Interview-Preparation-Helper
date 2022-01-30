@@ -1,5 +1,5 @@
 package array.task_92_646.solution;
 
-public interface Solution92_646 {
+public interface ISolution {
     void rotate(int[] nums, int k);
 }

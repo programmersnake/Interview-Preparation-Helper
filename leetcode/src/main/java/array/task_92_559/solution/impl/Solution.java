@@ -1,6 +1,6 @@
 package array.task_92_559.solution.impl;
 
-import array.task_92_559.solution.Solution_92_559;
+import array.task_92_559.solution.ISolution;
 
 import java.math.BigInteger;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import java.util.Arrays;
  * Runtime: 10 ms
  * Memory Usage: 39.7 MB
  */
-public class SolutionImpl implements Solution_92_559 {
+public class Solution implements ISolution {
     @Override
     public int[] plusOne(int[] digits) {
         StringBuilder stringBuilder = new StringBuilder();

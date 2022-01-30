@@ -1,12 +1,12 @@
 package array.task_92_559.solution.impl;
 
-import array.task_92_559.solution.Solution_92_559;
+import array.task_92_559.solution.ISolution;
 
 /**
  * Runtime: 1 ms
  * Memory Usage: 39.6 MB
  */
-public class SolutionImpl2 implements Solution_92_559 {
+public class Solution2 implements ISolution {
     @Override
     public int[] plusOne(int[] digits) {
         for (int i = digits.length - 1; i >= 0; i--) {

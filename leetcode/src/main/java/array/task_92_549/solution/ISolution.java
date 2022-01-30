@@ -1,5 +1,5 @@
 package array.task_92_549.solution;
 
-public interface Solution92_549 {
+public interface ISolution {
     int singleNumber(int[] nums);
 }
