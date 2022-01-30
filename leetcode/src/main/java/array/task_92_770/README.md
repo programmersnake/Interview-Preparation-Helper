@@ -4,8 +4,8 @@ You are given an n x n 2D matrix representing an image, rotate the image by 90 d
 
 You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
 
-### Implementation logic:
-Implementation logic: the algorithm correctly shifts for n-dimension.
+### Implemented logic:
+Important: the algorithm correctly shifts for n-dimension.
 
 Divide the matrix into levels of squares. Rotate each square separately. It starts from the outside, getting deeper and deeper with each iteration.
 
