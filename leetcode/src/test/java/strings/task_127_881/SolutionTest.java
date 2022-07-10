@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("array.task_127_881.Solution")
+@DisplayName("strings.task_127_881.Solution")
 class SolutionTest {
 
     private final Solution solution = new Solution();
