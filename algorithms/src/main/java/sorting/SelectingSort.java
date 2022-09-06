@@ -6,7 +6,7 @@ public class SelectingSort {
         for (int i = 0; i < array.length; i++) {
             int minIndex = i;
             for (int j = i + 1; j < array.length; j++) {
-                if (array[i] > array[j]) { // if < decreasing order
+                if (array[i] > array[j]) { // if '<' will be decreasing order
                     minIndex = j;
                 }
             }
